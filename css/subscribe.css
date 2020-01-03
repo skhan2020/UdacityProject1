@@ -1,0 +1,48 @@
+.subscribe-box {
+    grid-area: sb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0B130A;
+    height: 300px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.subscribe-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.subscribe-label {
+    font-size: 20px;
+    color: white;
+}
+
+.subscribe-input {
+    font-size: 16px;
+    height: 40px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit-btn {
+    font-size: 16px;
+    height: 45px;
+    width: 324px;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+}
+
+@media(min-width:990px) {
+    .subscribe-box {
+        flex-direction: row;
+        height: 100px;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+  }

@@ -1,0 +1,18 @@
+
+.info-box {
+    line-height: 18px;
+}
+
+.main-title {
+    text-decoration: underline;
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info-text {
+    padding-left: 30px;
+    width: 90%;
+}

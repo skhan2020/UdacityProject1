@@ -1,0 +1,103 @@
+@import url("../../css/main.css");
+@import url("qoute.css");
+@import url("info.css");
+
+.post-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    min-height: 1400px;
+}
+
+.info-box {
+    grid-area: inf;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.winter-image-2 {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.winter-image-1 {
+    display: none;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+.icon-box {
+    grid-area: icn;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.copy-write-box {
+    display: none;
+}
+
+.copy-write-bottom {
+    padding-left: 20px;
+}
+
+.icon-list {
+    margin: auto;
+}
+
+@media(min-width:1100px) {
+
+    .post-container {
+        width: 100%;
+        display: grid;
+        min-height: 900px;
+        justify-content: center;
+        grid-template-columns: auto auto auto 80px;
+        grid-gap: 50px;
+        grid-template-areas: 
+        "nb nb nb nb" 
+        "inf img img ff" 
+        "icn icn icn icn"
+        "ft ft ft ft";
+    }
+
+    .winter-image-1 {
+        display: block;
+        grid-area: img;
+        width: 400px;
+        height: auto;
+        margin: inherit;
+    }
+
+    .winter-image-2 {
+        display: none;
+    }
+
+    .copy-write-box {
+        display: block;
+        color: white;
+        padding-left: 30px;
+    }
+
+    .copy-write-bottom {
+        display: none;
+    }
+
+    .icon-box {
+        background-color: black;
+    }
+
+    .icon-list {
+        margin: inherit;
+    }
+
+}
